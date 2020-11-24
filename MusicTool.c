@@ -2,6 +2,7 @@
 // Created by Lenovo on 2020-11-24.
 //
 #include "MusicTool.h"
+#include <reg52.h>
 
 sbit p15 = P1 ^5;
 int pu[] = {6, 7, 8, 8, 7, 8, 8, 10, 10, 7, 7, 0, 0, 0, 3, 6, 6, 5, 6, 6, 8, 8, 5};

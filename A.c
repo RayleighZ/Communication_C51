@@ -1,5 +1,6 @@
 #include <reg52.h>
 #include "MusicTool.h"
+#include <intrins.h>
 sbit key1 = P3 ^0;
 int flagForSpark = 1;
 
@@ -29,18 +30,19 @@ void main() {
     TR1 = 1;
     EA = 1;
     ES = 1;
+    P2 = 0x00;
     //使用查询的方法发送数据
     while (1) {
         if (key1 == 0) {//如果按下key1
             count++;
-            SBUFF = count;
+            SBUF = count;
             while (TI == 0);
             TI = 1;
         }
     }
 }
 //甲机接收乙机发送的信息
-void onReceive() /*interrupt 4*/ {
+void onReceive() interrupt 4 {
     unsigned char temp;
     RI = 0;
     temp = SBUF;
