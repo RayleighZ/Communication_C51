@@ -122,6 +122,60 @@ ThreeCommuntcation/fast:
 	$(MAKE) -f CMakeFiles\ThreeCommuntcation.dir\build.make CMakeFiles/ThreeCommuntcation.dir/build
 .PHONY : ThreeCommuntcation/fast
 
+A.obj: A.c.obj
+
+.PHONY : A.obj
+
+# target to build an object file
+A.c.obj:
+	$(MAKE) -f CMakeFiles\ThreeCommuntcation.dir\build.make CMakeFiles/ThreeCommuntcation.dir/A.c.obj
+.PHONY : A.c.obj
+
+A.i: A.c.i
+
+.PHONY : A.i
+
+# target to preprocess a source file
+A.c.i:
+	$(MAKE) -f CMakeFiles\ThreeCommuntcation.dir\build.make CMakeFiles/ThreeCommuntcation.dir/A.c.i
+.PHONY : A.c.i
+
+A.s: A.c.s
+
+.PHONY : A.s
+
+# target to generate assembly for a file
+A.c.s:
+	$(MAKE) -f CMakeFiles\ThreeCommuntcation.dir\build.make CMakeFiles/ThreeCommuntcation.dir/A.c.s
+.PHONY : A.c.s
+
+B.obj: B.c.obj
+
+.PHONY : B.obj
+
+# target to build an object file
+B.c.obj:
+	$(MAKE) -f CMakeFiles\ThreeCommuntcation.dir\build.make CMakeFiles/ThreeCommuntcation.dir/B.c.obj
+.PHONY : B.c.obj
+
+B.i: B.c.i
+
+.PHONY : B.i
+
+# target to preprocess a source file
+B.c.i:
+	$(MAKE) -f CMakeFiles\ThreeCommuntcation.dir\build.make CMakeFiles/ThreeCommuntcation.dir/B.c.i
+.PHONY : B.c.i
+
+B.s: B.c.s
+
+.PHONY : B.s
+
+# target to generate assembly for a file
+B.c.s:
+	$(MAKE) -f CMakeFiles\ThreeCommuntcation.dir\build.make CMakeFiles/ThreeCommuntcation.dir/B.c.s
+.PHONY : B.c.s
+
 MusicTool.obj: MusicTool.c.obj
 
 .PHONY : MusicTool.obj
@@ -149,33 +203,6 @@ MusicTool.c.s:
 	$(MAKE) -f CMakeFiles\ThreeCommuntcation.dir\build.make CMakeFiles/ThreeCommuntcation.dir/MusicTool.c.s
 .PHONY : MusicTool.c.s
 
-main.obj: main.c.obj
-
-.PHONY : main.obj
-
-# target to build an object file
-main.c.obj:
-	$(MAKE) -f CMakeFiles\ThreeCommuntcation.dir\build.make CMakeFiles/ThreeCommuntcation.dir/main.c.obj
-.PHONY : main.c.obj
-
-main.i: main.c.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles\ThreeCommuntcation.dir\build.make CMakeFiles/ThreeCommuntcation.dir/main.c.i
-.PHONY : main.c.i
-
-main.s: main.c.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles\ThreeCommuntcation.dir\build.make CMakeFiles/ThreeCommuntcation.dir/main.c.s
-.PHONY : main.c.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -185,12 +212,15 @@ help:
 	@echo ... ThreeCommuntcation
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... A.obj
+	@echo ... A.i
+	@echo ... A.s
+	@echo ... B.obj
+	@echo ... B.i
+	@echo ... B.s
 	@echo ... MusicTool.obj
 	@echo ... MusicTool.i
 	@echo ... MusicTool.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
 .PHONY : help
 
 

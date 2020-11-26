@@ -4,8 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "E:/RayJoe_ClionPrj/Communication_C51/cmake-build-debug/MusicTool.c" "E:/RayJoe_ClionPrj/Communication_C51/cmake-build-debug/CMakeFiles/ThreeCommuntcation.dir/MusicTool.c.obj"
-  "E:/RayJoe_ClionPrj/Communication_C51/main.c" "E:/RayJoe_ClionPrj/Communication_C51/cmake-build-debug/CMakeFiles/ThreeCommuntcation.dir/main.c.obj"
+  "E:/RayJoe_ClionPrj/Communication_C51/A.c" "E:/RayJoe_ClionPrj/Communication_C51/cmake-build-debug/CMakeFiles/ThreeCommuntcation.dir/A.c.obj"
+  "E:/RayJoe_ClionPrj/Communication_C51/B.c" "E:/RayJoe_ClionPrj/Communication_C51/cmake-build-debug/CMakeFiles/ThreeCommuntcation.dir/B.c.obj"
+  "E:/RayJoe_ClionPrj/Communication_C51/MusicTool.c" "E:/RayJoe_ClionPrj/Communication_C51/cmake-build-debug/CMakeFiles/ThreeCommuntcation.dir/MusicTool.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

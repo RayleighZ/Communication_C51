@@ -72,8 +72,12 @@ void miP() {
 }
 
 void play() {
-    while (playFlag){
+    playFlag = 1;
+    while (playFlag && !RI){
         for (i = 0; i < 23; ++i) {
+            if (RI){
+                break;
+            }
             z = 0;
             for (j = 0; j < 500; ++j) {
                 //选择频谱

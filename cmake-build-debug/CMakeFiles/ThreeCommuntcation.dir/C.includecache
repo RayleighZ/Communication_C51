@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/RayJoe_ClionPrj/Communication_C51/A.c
+reg52.h
+-
+MusicTool.h
+E:/RayJoe_ClionPrj/Communication_C51/MusicTool.h
+intrins.h
+-
+
+E:/RayJoe_ClionPrj/Communication_C51/B.c
+reg52.h
+-
+
+E:/RayJoe_ClionPrj/Communication_C51/MusicTool.c
+MusicTool.h
+E:/RayJoe_ClionPrj/Communication_C51/MusicTool.h
+reg52.h
+-
+
+E:/RayJoe_ClionPrj/Communication_C51/MusicTool.h
+

@@ -74,13 +74,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="E:/RayJoe_ClionPrj/Communication_C51/A.c">
+			<Option target="ThreeCommuntcation"/>
+		</Unit>
+		<Unit filename="E:/RayJoe_ClionPrj/Communication_C51/B.c">
+			<Option target="ThreeCommuntcation"/>
+		</Unit>
+		<Unit filename="E:/RayJoe_ClionPrj/Communication_C51/MusicTool.c">
+			<Option target="ThreeCommuntcation"/>
+		</Unit>
 		<Unit filename="E:/RayJoe_ClionPrj/Communication_C51/MusicTool.h">
-			<Option target="ThreeCommuntcation"/>
-		</Unit>
-		<Unit filename="E:/RayJoe_ClionPrj/Communication_C51/cmake-build-debug/MusicTool.c">
-			<Option target="ThreeCommuntcation"/>
-		</Unit>
-		<Unit filename="E:/RayJoe_ClionPrj/Communication_C51/main.c">
 			<Option target="ThreeCommuntcation"/>
 		</Unit>
 		<Unit filename="E:/RayJoe_ClionPrj/Communication_C51/CMakeLists.txt">

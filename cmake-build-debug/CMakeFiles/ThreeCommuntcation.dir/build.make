@@ -56,47 +56,62 @@ include CMakeFiles/ThreeCommuntcation.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ThreeCommuntcation.dir/flags.make
 
-CMakeFiles/ThreeCommuntcation.dir/main.c.obj: CMakeFiles/ThreeCommuntcation.dir/flags.make
-CMakeFiles/ThreeCommuntcation.dir/main.c.obj: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\RayJoe_ClionPrj\Communication_C51\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ThreeCommuntcation.dir/main.c.obj"
-	E:\cb\CodeBlocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\ThreeCommuntcation.dir\main.c.obj   -c E:\RayJoe_ClionPrj\Communication_C51\main.c
+CMakeFiles/ThreeCommuntcation.dir/A.c.obj: CMakeFiles/ThreeCommuntcation.dir/flags.make
+CMakeFiles/ThreeCommuntcation.dir/A.c.obj: ../A.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\RayJoe_ClionPrj\Communication_C51\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ThreeCommuntcation.dir/A.c.obj"
+	E:\cb\CodeBlocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\ThreeCommuntcation.dir\A.c.obj   -c E:\RayJoe_ClionPrj\Communication_C51\A.c
 
-CMakeFiles/ThreeCommuntcation.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ThreeCommuntcation.dir/main.c.i"
-	E:\cb\CodeBlocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RayJoe_ClionPrj\Communication_C51\main.c > CMakeFiles\ThreeCommuntcation.dir\main.c.i
+CMakeFiles/ThreeCommuntcation.dir/A.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ThreeCommuntcation.dir/A.c.i"
+	E:\cb\CodeBlocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RayJoe_ClionPrj\Communication_C51\A.c > CMakeFiles\ThreeCommuntcation.dir\A.c.i
 
-CMakeFiles/ThreeCommuntcation.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ThreeCommuntcation.dir/main.c.s"
-	E:\cb\CodeBlocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RayJoe_ClionPrj\Communication_C51\main.c -o CMakeFiles\ThreeCommuntcation.dir\main.c.s
+CMakeFiles/ThreeCommuntcation.dir/A.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ThreeCommuntcation.dir/A.c.s"
+	E:\cb\CodeBlocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RayJoe_ClionPrj\Communication_C51\A.c -o CMakeFiles\ThreeCommuntcation.dir\A.c.s
 
 CMakeFiles/ThreeCommuntcation.dir/MusicTool.c.obj: CMakeFiles/ThreeCommuntcation.dir/flags.make
-CMakeFiles/ThreeCommuntcation.dir/MusicTool.c.obj: MusicTool.c
+CMakeFiles/ThreeCommuntcation.dir/MusicTool.c.obj: ../MusicTool.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\RayJoe_ClionPrj\Communication_C51\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ThreeCommuntcation.dir/MusicTool.c.obj"
-	E:\cb\CodeBlocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\ThreeCommuntcation.dir\MusicTool.c.obj   -c E:\RayJoe_ClionPrj\Communication_C51\cmake-build-debug\MusicTool.c
+	E:\cb\CodeBlocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\ThreeCommuntcation.dir\MusicTool.c.obj   -c E:\RayJoe_ClionPrj\Communication_C51\MusicTool.c
 
 CMakeFiles/ThreeCommuntcation.dir/MusicTool.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ThreeCommuntcation.dir/MusicTool.c.i"
-	E:\cb\CodeBlocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RayJoe_ClionPrj\Communication_C51\cmake-build-debug\MusicTool.c > CMakeFiles\ThreeCommuntcation.dir\MusicTool.c.i
+	E:\cb\CodeBlocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RayJoe_ClionPrj\Communication_C51\MusicTool.c > CMakeFiles\ThreeCommuntcation.dir\MusicTool.c.i
 
 CMakeFiles/ThreeCommuntcation.dir/MusicTool.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ThreeCommuntcation.dir/MusicTool.c.s"
-	E:\cb\CodeBlocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RayJoe_ClionPrj\Communication_C51\cmake-build-debug\MusicTool.c -o CMakeFiles\ThreeCommuntcation.dir\MusicTool.c.s
+	E:\cb\CodeBlocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RayJoe_ClionPrj\Communication_C51\MusicTool.c -o CMakeFiles\ThreeCommuntcation.dir\MusicTool.c.s
+
+CMakeFiles/ThreeCommuntcation.dir/B.c.obj: CMakeFiles/ThreeCommuntcation.dir/flags.make
+CMakeFiles/ThreeCommuntcation.dir/B.c.obj: ../B.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\RayJoe_ClionPrj\Communication_C51\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ThreeCommuntcation.dir/B.c.obj"
+	E:\cb\CodeBlocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\ThreeCommuntcation.dir\B.c.obj   -c E:\RayJoe_ClionPrj\Communication_C51\B.c
+
+CMakeFiles/ThreeCommuntcation.dir/B.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ThreeCommuntcation.dir/B.c.i"
+	E:\cb\CodeBlocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\RayJoe_ClionPrj\Communication_C51\B.c > CMakeFiles\ThreeCommuntcation.dir\B.c.i
+
+CMakeFiles/ThreeCommuntcation.dir/B.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ThreeCommuntcation.dir/B.c.s"
+	E:\cb\CodeBlocks\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\RayJoe_ClionPrj\Communication_C51\B.c -o CMakeFiles\ThreeCommuntcation.dir\B.c.s
 
 # Object files for target ThreeCommuntcation
 ThreeCommuntcation_OBJECTS = \
-"CMakeFiles/ThreeCommuntcation.dir/main.c.obj" \
-"CMakeFiles/ThreeCommuntcation.dir/MusicTool.c.obj"
+"CMakeFiles/ThreeCommuntcation.dir/A.c.obj" \
+"CMakeFiles/ThreeCommuntcation.dir/MusicTool.c.obj" \
+"CMakeFiles/ThreeCommuntcation.dir/B.c.obj"
 
 # External object files for target ThreeCommuntcation
 ThreeCommuntcation_EXTERNAL_OBJECTS =
 
-ThreeCommuntcation.exe: CMakeFiles/ThreeCommuntcation.dir/main.c.obj
+ThreeCommuntcation.exe: CMakeFiles/ThreeCommuntcation.dir/A.c.obj
 ThreeCommuntcation.exe: CMakeFiles/ThreeCommuntcation.dir/MusicTool.c.obj
+ThreeCommuntcation.exe: CMakeFiles/ThreeCommuntcation.dir/B.c.obj
 ThreeCommuntcation.exe: CMakeFiles/ThreeCommuntcation.dir/build.make
 ThreeCommuntcation.exe: CMakeFiles/ThreeCommuntcation.dir/linklibs.rsp
 ThreeCommuntcation.exe: CMakeFiles/ThreeCommuntcation.dir/objects1.rsp
 ThreeCommuntcation.exe: CMakeFiles/ThreeCommuntcation.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\RayJoe_ClionPrj\Communication_C51\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable ThreeCommuntcation.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\RayJoe_ClionPrj\Communication_C51\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable ThreeCommuntcation.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\ThreeCommuntcation.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
