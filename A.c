@@ -2,11 +2,12 @@
 #include "MusicTool.h"
 #include <intrins.h>
 
-sbit key1 = P3 ^0;
+sbit key1 = P3 ^1;
 int flagForSpark = 1;
 unsigned char temp;
 
 unsigned int c[10] = {0x3F, 0x06, 0x5B, 0x4F, 0x66, 0x6D, 0x7D, 0x07, 0x7F, 0x6F};
+
 void delay1s(void)   //误差 0us
 {
     unsigned char a, b, c;
@@ -50,34 +51,35 @@ void main() {
                 count++;
                 SBUF = count;
                 while (TI == 0);
-                TI = 1;
+                TI = 0;
             }
         }
     }
 }
 
 //甲机接收乙机发送的信息
-void onReceive(void) interrupt 4 {
-    if (RI) {
-        RI = 0;
-        temp = SBUF;
-        switch (temp) {
-            case 0: {
-                flagForSpark = 1;
-                spark();
-                break;
-            }
-            case 1: {
-                flagForSpark = 0;
-                break;
-            }
-            case 2: {
-                play();
-                break;
-            }
-            case 3: {
-                stop();
-                break;
+void onReceive(void) /*interrupt 4*/ {
+        if (RI && (P3 != ~0x01)) {
+            RI = 0;
+            temp = SBUF;
+            switch (temp) {
+                case 0: {
+                    flagForSpark = 1;
+                    spark();
+                    break;
+                }
+                case 1: {
+                    flagForSpark = 0;
+                    break;
+                }
+                case 2: {
+                    play();
+                    break;
+                }
+                case 3: {
+                    stop();
+                    break;
+                }
             }
         }
     }

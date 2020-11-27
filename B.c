@@ -3,15 +3,20 @@
 //
 #include <reg52.h>
 
+int count = 0;
 unsigned char Temp;
 unsigned int c[10] = {0x3F, 0x06, 0x5B, 0x4F, 0x66, 0x6D, 0x7D, 0x07, 0x7F, 0x6F};
 
+sbit lsa = P2 ^2;
+sbit lsb = P2 ^3;
+sbit lsc = P2 ^4;
+
 void delay10ms(void)   //误差 0us
 {
-    unsigned char a,b,c;
-    for(c=1;c>0;c--)
-        for(b=38;b>0;b--)
-            for(a=130;a>0;a--);
+    unsigned char a, b, c;
+    for (c = 1; c > 0; c--)
+        for (b = 38; b > 0; b--)
+            for (a = 130; a > 0; a--);
 }
 
 void main() {
@@ -48,19 +53,32 @@ void main() {
                     }
                 }
                 SBUF = temp;
+                //P0 = c[temp];
                 while (TI == 0);
-                TI = 1;
+                TI = 0;
             }
         }
     }
 }
 
-void onReceive() interrupt 4 {
-    if (RI) {
-        int count = 0;
+void onReceive() /*interrupt 4*/ {
+    int reCount = 0;
+    if (RI && (P3 != ~0x01)) {
         RI = 0;
-        Temp = SBUF;
-        count = Temp;
-        P0 = c[count];
+        count++;
+        count = count % 99;
+        while (!RI && !TI) {
+            reCount++;
+            lsb = 0;
+            lsc = 0;
+            if (reCount % 2 == 0) {
+                lsa = 0;
+                P0 = c[count % 10];
+            } else {
+                lsa = 1;
+                P0 = c[count / 10];
+            }
+            delay10ms();
+        }
     }
 }
